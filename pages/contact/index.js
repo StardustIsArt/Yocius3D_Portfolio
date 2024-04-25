@@ -10,7 +10,32 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../../variants";
 
-const Contact = () => {
+// Email JS
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_t2rumsh",
+        "template_ljarmik",
+        form.current,
+        "uLDAFhJz6mBTHqkAK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -33,15 +58,42 @@ const Contact = () => {
             animate="show"
             exit="hidden"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            ref={form}
+            onSubmit={sendEmail}
+            id="contact_form"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input
+                type="text"
+                placeholder="name"
+                className="input"
+                id="fname"
+              />
+
+              <input
+                type="text"
+                placeholder="email"
+                className="input"
+                id="email"
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <input
+              type="text"
+              placeholder="subject"
+              className="input"
+              id="subject"
+            />
+
+            <textarea
+              placeholder="message"
+              className="textarea"
+              id="message"
+            ></textarea>
+            <button
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              value="Send"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let's talk
               </span>

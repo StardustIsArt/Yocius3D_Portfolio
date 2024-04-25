@@ -7,14 +7,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // icons
-import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
+import { RxCrop, RxPencil2, RxDesktop, RxArrowTopRight } from "react-icons/rx";
+import { FaUserSecret } from "react-icons/fa";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
@@ -24,27 +18,32 @@ export const serviceData = [
   {
     icon: <RxCrop />,
     title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Let's create a brand that shows off your unique qualities and attributes.",
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Hand drawn idea or one in your mind? Let's collaborate on designs together.",
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Feeling a little 'Web'-by? Open up the world of web to your ideas and proposals.",
   },
   {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <FaUserSecret />,
+    title: "Security",
+    description:
+      "Networks · SIEM tools · Python · Linux · Intrusion Detection · Threat Analysis",
   },
   {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <FaUserSecret />,
+    title: "Photography",
+    description:
+      "Choices are Senior · Family · Pet · Wedding · Always Candid, Always Real",
   },
 ];
 

@@ -1,25 +1,25 @@
 // testimonial slider data
 export const testimonialSlider = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/womanPopArt.svg",
+    name: "Jodi",
+    position: "Branding, Design Client",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Samantha was very easy to work with. I came to her with vague ideas and information but no real design concepts and she was able to create visuals beyond what I had expected. Overall she made the process easy and stress-free!",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    image: "/ManPopArt.svg",
+    name: "Jose",
+    position: "Website Client",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Everything went smoothly and it was a pleasure to work with Samantha!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    image: "/sunglassesWomanPopArt.svg",
+    name: "Anonymous",
+    position: "Design Client",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Sam was great to work with. She helped bring the thoughts that were in my head out into a design to print. My business cards look incredible and will definitely work with her again in the future.",
   },
 ];
 
@@ -58,7 +58,7 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={100} height={100} alt="" />
+                    <Image src={person.image} width={200} height={200} alt="" />
                   </div>
                   {/* name */}
                   <div className="text-lg">{person.name}</div>

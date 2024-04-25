@@ -16,15 +16,15 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
-      <div className="w-full h-full bg-graident-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col  justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1
-            className="h1"
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
+            className="h1"
           >
             Creating Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -35,9 +35,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 sl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Come and explore all that we have to offer at Yocius Productions.
+            Yocius Productions is here to help create, develop and secure your
+            projects and cyber world.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -55,7 +56,7 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-[2000px] h-full absolute right-0 bottom-0">
         {/* bg img */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* particles */}
@@ -67,7 +68,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[600px] max-h-[800px] absolute -bottom-22 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[550px] max-h-[750px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
         </motion.div>

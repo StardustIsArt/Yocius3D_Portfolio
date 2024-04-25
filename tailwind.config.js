@@ -22,12 +22,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#2F1656",
+        primary: "#2A0B32",
         secondary: "#1686A0",
         accent: "#6efbfa",
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
+        explosion: 'url("/unsplash.jpg")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
@@ -43,7 +43,7 @@ module.exports = {
   },
   container: {
     padding: {
-      DEFAULT: "15px",
+      DEFAULT: "10px",
     },
   },
   plugins: [require("tailwind-scrollbar")],

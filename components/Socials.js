@@ -2,11 +2,17 @@ import Link from "next/link";
 
 // icons
 import { RiInstagramLine, RiFacebookLine } from "react-icons/ri";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
+      <Link
+        href={"https://github.com/StardustIsArt"}
+        className="hover:text-accent transition-all duration-300"
+      >
+        <FaGithub />
+      </Link>
       <Link
         href={"https://www.linkedin.com/in/yociusproductions/"}
         className="hover:text-accent transition-all duration-300"

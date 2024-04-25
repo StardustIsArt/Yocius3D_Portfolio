@@ -81,12 +81,8 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Division E - Third Place Photo Essay - Tribune Phonograph",
+        stage: "2023",
       },
     ],
   },
@@ -94,16 +90,16 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Creative Media/Composing - TP Printing Company",
+        stage: "July 2019 - April 2021, Dec 2021 - current",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Legal Assistant - Piehler & Strande Sc",
+        stage: "April 2021 - Dec 2021",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Receptionist/Marketing Consultant & Designer - Back To Bliss",
+        stage: "Aug 2016 - July 2019",
       },
     ],
   },
@@ -115,12 +111,12 @@ export const aboutData = [
         stage: "2024",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Digital Media, Info. Resources Design - UW - Stevens Point",
+        stage: "2017",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "SheCodes Web Development Plus",
+        stage: "2021-2022",
       },
     ],
   },
@@ -141,7 +137,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left scroll-smooth scroll-auto">
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -153,7 +149,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-8">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -163,19 +159,33 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Uniquely <span className="text-accent">defined</span> stardust
+            forming <span className="text-accent">art.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[650px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Talk about myself here. What made me get into programming, security
-            and more.
+            Samantha Yocius is an experienced Graphic Designer, Web Developer,
+            Photographer and dog Mom who is looking to transfer into the
+            Technology Industry & CyberSecurity world. Samantha considers
+            herself a "student of life" who is eager to build both, a beautiful
+            existance in this world, and her professional development through
+            continued coursework. Her hunger for knowledge makes her a unique
+            individual with a vasy array of background experiences and
+            information which brings different insights to projects. Her
+            fascination of technology and how things work/break has directed her
+            interest into the world of games and security. Meanwhile, Samantha
+            maintains a healthy work-life balance and feels it is the key to a
+            happy life. In her spare time, when not studying for various
+            certifications, she plays with her dog, Koda, tinkers around on
+            HackTheBox, learning about encryption, ethical hacking, and also
+            preparing for her CompTIA Security+ exam.
           </motion.p>
+
           {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -184,37 +194,38 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 xl:gap-x-8">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={4} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
                 </div>
               </div>
-              {/* clients */}
+              {/* idea */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={450} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
+                  Creative Ideas
                 </div>
               </div>
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* hours */}
+              <div className="relative flex-1 after:w-[1px] after:h-full  after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
+                  Invested hours
                 </div>
               </div>
             </div>
           </motion.div>
         </div>
+
         {/* info */}
         <motion.div
           variants={fadeIn("left", 0.4)}
