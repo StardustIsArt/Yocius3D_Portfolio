@@ -182,7 +182,7 @@ const About = () => {
             maintains a healthy work-life balance and feels it is the key to a
             happy life. In her spare time, when not studying for various
             certifications, she plays with her dog, Koda, tinkers around on
-            HackTheBox, learning about encryption, ethical hacking, and also
+            HackTheBox, learns about encryption, ethical hacking, and also
             preparing for her CompTIA Security+ exam.
           </motion.p>
 
