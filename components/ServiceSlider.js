@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 // icons
 import { RxCrop, RxPencil2, RxDesktop, RxArrowTopRight } from "react-icons/rx";
 import { FaUserSecret } from "react-icons/fa";
+import { BsCamera2 } from "react-icons/bs";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
@@ -40,7 +41,7 @@ export const serviceData = [
       "Networks · SIEM tools · Python · Linux · Intrusion Detection · Threat Analysis",
   },
   {
-    icon: <FaUserSecret />,
+    icon: <BsCamera2 />,
     title: "Photography",
     description:
       "Choices are Senior · Family · Pet · Wedding · Always Candid, Always Real",
