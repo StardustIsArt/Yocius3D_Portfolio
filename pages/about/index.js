@@ -37,43 +37,42 @@ export const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 key={0} />,
-          <FaCss3 key={1} />,
-          <FaJs key={2} />,
-          <FaReact key={3} />,
-          <SiNextdotjs key={4} />,
+          <FaHtml5 />,
+          <FaCss3 />,
+          <FaJs />,
+          <FaReact />,
+          <SiNextdotjs />,
         ],
       },
       {
         title: "UI/UX Design",
         icons: [
-          <FaFigma key={5} />,
-          <SiAdobexd key={6} />,
-          <SiAdobeillustrator key={7} />,
-          <SiAdobeindesign key={8} />,
+          <FaFigma />,
+          <SiAdobexd />,
+          <SiAdobeillustrator />,
+          <SiAdobeindesign />,
         ],
       },
       {
         title: "Photography",
         icons: [
-          <BsCamera2 key={9} />,
-          <SiAdobelightroom key={10} />,
-          <SiAdobelightroomclassic key={11} />,
-          <SiAdobephotoshop key={12} />,
+          <BsCamera2 />,
+          <SiAdobelightroom />,
+          <SiAdobelightroomclassic />,
+          <SiAdobephotoshop />,
         ],
       },
       {
-        id: 3,
         title: "Cyber Security",
         icons: [
-          <FaServer key={13} />,
-          <FaFingerprint key={14} />,
-          <FaPython key={15} />,
-          <FaNetworkWired key={16} />,
-          <FaTerminal key={17} />,
-          <FaUserSecret key={18} />,
-          <FaLinux key={19} />,
-          <SiKalilinux key={20} />,
+          <FaServer />,
+          <FaFingerprint />,
+          <FaPython />,
+          <FaNetworkWired />,
+          <FaTerminal />,
+          <FaUserSecret />,
+          <FaLinux />,
+          <SiKalilinux />,
         ],
       },
     ],
@@ -82,8 +81,8 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "WNA 2023 Better Newspaper Awards:",
-        stage: " Third Place Photo Essay - Tribune Phonograph",
+        title: "Division E - Third Place Photo Essay - Tribune Phonograph",
+        stage: "2023",
       },
     ],
   },
@@ -173,10 +172,10 @@ const About = () => {
             Samantha Yocius is an experienced Graphic Designer, Web Developer,
             Photographer and dog Mom who is looking to transfer into the
             Technology Industry & CyberSecurity world. Samantha considers
-            herself a &quot;student of life&quot; who is eager to build both, a
-            beautiful existance in this world, and her professional development
-            through continued coursework. Her hunger for knowledge makes her a
-            unique individual with a vasy array of background experiences and
+            herself a "student of life" who is eager to build both, a beautiful
+            existance in this world, and her professional development through
+            continued coursework. Her hunger for knowledge makes her a unique
+            individual with a vasy array of background experiences and
             information which brings different insights to projects. Her
             fascination of technology and how things work/break has directed her
             interest into the world of games and security. Meanwhile, Samantha
@@ -265,16 +264,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return (
-                        <div key={itemIndex}>
-                          <div
-                            className="text-2xl text-white"
-                            key={index.icons}
-                          >
-                            {icon}
-                          </div>
-                        </div>
-                      );
+                      return <div className="text-2xl text-white">{icon}</div>;
                     })}
                   </div>
                 </div>
