@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
-}
+  output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./my-loader.ts",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
